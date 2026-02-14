@@ -1,0 +1,63 @@
+@import url("/CANTINA/Usuário/styles/footer.css");
+
+*{
+    padding: 0%;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    box-sizing: border-box;
+}
+.container {
+     max-width: 800px;
+     margin: auto;
+     margin-bottom: 455px;
+     background: white; 
+     padding: 30px; 
+     border-radius: 8px; 
+     box-shadow: 0 0 15px rgba(0,0,0,0.1); 
+}
+h1 {
+     text-align: center;
+      color: #333; 
+      margin-bottom: 30px; 
+}
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+th, td { 
+    padding: 12px; 
+    border-bottom: 1px solid #ddd; 
+    text-align: left; 
+}
+th { 
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+.ranking { 
+    width: 5%; 
+    text-align: center; 
+}
+.vendido {
+     width: 20%; 
+     text-align: center; 
+}
+.erro {
+    padding: 15px; 
+    background-color: #f8d7da; 
+    color: #721c24; border: 1px solid #f5c6cb;
+    border-radius: 4px; 
+}
+.botao-voltar{
+    color: var(--cor-gray-600) ;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}

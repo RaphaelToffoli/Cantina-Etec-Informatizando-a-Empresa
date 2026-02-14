@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte-primaria: sans-serif;
+    --fonte-botao:'Poppins', sans-serif ;
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-subtitulo:'Roboto', sans-serif;
+    --cor-primaria:white;
+    --cor-segundaria:black;
+    --cor-login:rgb(221, 34, 34);
+    --cor-fundo:#ece9e9;
+    --segunda-cor-fundo:#b9b6b6;
+}
+.perfil-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Ícone do perfil */
+.perfil-icone {
+  background: linear-gradient(135deg, var(--cor-login), #ff0000);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.perfil-icone:hover {
+  transform: scale(1.1);
+}
+
+/* Menu do perfil */
+.dropdown-conteudo {
+  display: none;
+  position: absolute;
+  top: 60px; /* espaçamento abaixo do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  min-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  padding: 15px 10px;
+  z-index: 1000;
+
+  /* Animação */
+  opacity: 0;
+  transform: translate(-50%, -10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Quando estiver visível */
+.dropdown-conteudo[style*="block"] {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* Links e texto dentro do menu */
+.dropdown-conteudo p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.dropdown-conteudo a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  font-family: var(--fonte-subtitulo);
+  transition: background-color 0.2s;
+}
+
+.dropdown-conteudo a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-conteudo a:last-child {
+  color: red;
+}

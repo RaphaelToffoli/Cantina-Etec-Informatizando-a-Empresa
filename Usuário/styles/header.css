@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte-primaria: sans-serif;
+    --fonte-botao:'Poppins', sans-serif ;
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-subtitulo:'Roboto', sans-serif;
+    --cor-primaria:white;
+    --cor-segundaria:black;
+    --cor-login:rgb(221, 34, 34);
+    --cor-fundo:#ece9e9;
+    --segunda-cor-fundo:#b9b6b6;
+}
+.cabecalho{
+    padding: 2% 5% 0 5% ;
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+    background-color: #ece9e9;
+    position: fixed;
+}
+.logo{
+    margin-left: 20%;
+    display: block;
+    background-image: url('../images/Cantina.png');
+    width: 100px;
+    height:50px;
+    border: solid transparent;
+    border-radius: 5px;
+    background-size: contain;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+.cabecalho__menu{
+    display: flex;  
+    align-items: center;
+    justify-content: flex-start;
+    gap:30px;
+}
+.menu_link{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+.cabecalho__menu__link{
+    text-decoration: none;
+    color:var(--cor-segundaria);
+    font-family:var(--fonte-primaria);
+    font-size: 1.25rem;
+
+}
+.cabecalho__menu__link:hover{
+    text-decoration: underline var(--cor-login);
+}
+
+.dropdown{
+    display: flex;
+    gap:0.5em;
+    position: relative;
+}
+.dropdown-toggle{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+    cursor: pointer;
+}
+.dropdown-toggle:hover{
+    text-decoration: underline var(--cor-login);
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 160px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    flex-direction: column;
+    padding: 0.5em 0;
+    z-index: 1000;
+}
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.dropdown-item:hover {
+    background-color: var(--cor-login);
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+.menu_login{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-left: 10%;
+}
+.Login{
+    color:var(--cor-login);
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+}
+.Login:hover{
+    text-decoration: underline var(--cor-login);
+}
+.LoginBtn{
+    display: inline-block;
+    color:var(--cor-primaria);
+    text-decoration: none;
+    font-family: var(--fonte-botao);
+    font-size: 16px;
+    border: solid transparent;
+    border-radius: 5px;
+    width:120px;
+    height:40px;
+    line-height:40px;
+    background-color: var(--cor-login);
+    text-align:center;
+}
+.LoginBtn:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-login);
+    transition: 0.5s;
+}

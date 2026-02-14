@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte-primaria: sans-serif;
+    --fonte-botao:'Poppins', sans-serif ;
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-subtitulo:'Roboto', sans-serif;
+    --cor-primaria:white;
+    --cor-segundaria:black;
+    --cor-login:rgb(221, 34, 34);
+    --cor-fundo:#ece9e9;
+    --segunda-cor-fundo:#b9b6b6;
+}
+#conteudoCategoria {
+    padding: 20px;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título da categoria */
+#tituloCategoria {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container dos produtos */
+#produtosContainer {
+    display: flex;
+    flex-direction: column; /* produtos um abaixo do outro */
+    gap: 20px; /* espaço entre os produtos */
+}
+
+/* Card do produto */
+.produto-card {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Informações do produto */
+.produto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Nome do produto */
+.produto-nome {
+    font-weight: bold;
+    font-family: var(--fonte-subtitulo);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Descrição do produto */
+.produto-descricao {
+    font-size: 0.95em;
+    font-family: var(--fonte-primaria);
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Preço */
+.produto-preco {
+    font-size: 1em;
+    font-weight: bold;
+    color: #2c7;
+    margin-bottom: 10px;
+}
+
+/* Botão comprar */
+.produto-btn-comprar {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+.produto-btn-comprar:hover {
+    background-color: #218838;
+}
+
+/* Botão voltar */
+#conteudoCategoria button {
+    padding: 8px 15px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-family: var(--fonte-botao);
+    background-color: var(--cor-login);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#conteudoCategoria button:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-login);
+    padding: 8px 15px;
+    border: solid 1px var(--cor-login);
+}
